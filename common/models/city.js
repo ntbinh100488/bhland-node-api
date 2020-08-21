@@ -1,6 +1,12 @@
 'use strict';
 
 module.exports = function(City) {
+    // Operation hooks
+    City.observe('after save', function(ctx, next) {
+        console.log('supports isNewInstance?', ctx.isNewInstance !== undefined);
+        next();
+    });
+
     // Model Validation
     City.validatesLengthOf('name', {min: 3, message: {min: 'too short'}});
 
