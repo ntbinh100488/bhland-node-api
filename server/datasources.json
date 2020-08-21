@@ -2,6 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory",
-    "file":"lb-coffeeshop-db-data.json"
+    "file": "lb-coffeeshop-db-data.json"
+  },
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "bhland-db",
+    "password": "kg1ktdvt@O",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql"
   }
 }
