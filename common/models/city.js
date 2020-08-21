@@ -1,6 +1,10 @@
 'use strict';
 
 module.exports = function(City) {
+    // Model Validation
+    City.validatesLengthOf('name', {min: 3, message: {min: 'too short'}});
+
+    // Model remote methods
     City.ed_pop = function (count, cb) {
         console.log(count);
 
