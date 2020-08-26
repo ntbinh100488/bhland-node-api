@@ -18,6 +18,11 @@
       "type": "hasMany",
       "model": "region",
       "foreignKey": "cityId"
+    },
+    "CoffeeShop": {
+      "type": "hasMany",
+      "model": "CoffeeShop",
+      "foreignKey": "cityId"
     }
   },
   "acls": [

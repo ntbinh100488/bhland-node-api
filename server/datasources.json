@@ -6,10 +6,10 @@
   },
   "mysql": {
     "name": "mysql",
-    "host": "171.244.140.97",
+    "host": "localhost",
     "port": 3306,
     "database": "bhland-db",
-    "user": "dbadmin",
+    "user": "root",
     "password": "kg1ktdvt@O",
     "connector": "mysql"
   }

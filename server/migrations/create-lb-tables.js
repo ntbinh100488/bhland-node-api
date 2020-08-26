@@ -1,4 +1,4 @@
-var server = require('./server');
+var server = require('../server');
     var ds = server.dataSources.mysql;
     var lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'City', 'region', 'CoffeeShop', ];
     ds.automigrate(lbTables, function(er) {
