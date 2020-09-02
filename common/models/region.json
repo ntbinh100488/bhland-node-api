@@ -14,7 +14,7 @@
     "cityId": {
       "type": "number"
     },
-    "description":{
+    "description": {
       "type": "string"
     }
   },
