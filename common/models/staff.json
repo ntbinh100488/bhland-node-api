@@ -1,25 +1,22 @@
 {
-  "name": "note",
-  "plural": "notes",
+  "name": "staff",
+  "plural": "staffs",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "description": {
+    "name": {
       "type": "string",
       "required": true
-    },
-    "staffId": {
-        "type": "number"
-      }
+    }
   },
   "validations": [],
   "relations": {
-    "staffs": {
-      "type": "belongsTo",
-      "model": "staff",
+    "notes": {
+      "type": "hasMany",
+      "model": "note",
       "foreignKey": "staffId"
     }
   },

@@ -50,5 +50,9 @@
   "note": {
     "dataSource": "mysql",
     "public": true
+  },
+  "staff": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
