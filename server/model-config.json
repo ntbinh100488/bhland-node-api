@@ -35,18 +35,6 @@
     "dataSource": "mysql",
     "public": false
   },
-  "CoffeeShop": {
-    "dataSource": "mysql",
-    "public": true
-  },
-  "City": {
-    "dataSource": "mysql",
-    "public": true
-  },
-  "region": {
-    "dataSource": "mysql",
-    "public": true
-  },
   "note": {
     "dataSource": "mysql",
     "public": true
