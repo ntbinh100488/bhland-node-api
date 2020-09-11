@@ -42,5 +42,17 @@
   "staff": {
     "dataSource": "mysql",
     "public": true
+  },
+  "city": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "district": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "ward": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

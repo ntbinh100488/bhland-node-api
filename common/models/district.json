@@ -1,0 +1,30 @@
+{
+  "name": "district",
+  "plural": "districts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "city": {
+      "type": "belongsTo",
+      "model": "city",
+      "foreignKey": "cityId"
+    },
+    "wards": {
+      "type": "hasMany",
+      "model": "ward",
+      "foreignKey": "districtId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
