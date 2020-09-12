@@ -1,0 +1,52 @@
+{
+  "name": "realestate",
+  "plural": "realestates",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "detailOne": {
+      "type": "string"
+    },
+    "detailTwo": {
+      "type": "string"
+    },
+    "area": {
+      "type": "number"
+    },
+    "width": {
+      "type": "number"
+    },
+    "length": {
+      "type": "number"
+    },
+    "value": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "city": {
+      "type": "belongsTo",
+      "model": "city",
+      "foreignKey": "cityId"
+    },
+    "district": {
+      "type": "belongsTo",
+      "model": "district",
+      "foreignKey": "districtId"
+    },
+    "ward": {
+      "type": "belongsTo",
+      "model": "ward",
+      "foreignKey": "wardId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -21,6 +21,11 @@
       "type": "hasMany",
       "model": "district",
       "foreignKey": "cityId"
+    },
+    "realestates": {
+      "type": "hasMany",
+      "model": "realestate",
+      "foreignKey": "cityId"
     }
   },
   "acls": [],

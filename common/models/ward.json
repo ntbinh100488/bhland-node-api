@@ -21,6 +21,11 @@
       "type": "belongsTo",
       "model": "district",
       "foreignKey": "districtId"
+    },
+    "realestates": {
+      "type": "hasMany",
+      "model": "realestate",
+      "foreignKey": "wardId"
     }
   },
   "acls": [],

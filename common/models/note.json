@@ -12,8 +12,8 @@
       "required": true
     },
     "staffId": {
-        "type": "number"
-      }
+      "type": "number"
+    }
   },
   "validations": [],
   "relations": {
