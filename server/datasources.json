@@ -5,12 +5,12 @@
     "file": "lb-coffeeshop-db-data.json"
   },
   "mysql": {
-    "host": "localhost",
+    "name": "mysql",
+    "host": "171.244.140.220",
     "port": 3306,
     "database": "bhland-db",
     "password": "kg1ktdvt@O",
-    "name": "mysql",
-    "user": "root",
+    "user": "dbadmin",
     "connector": "mysql"
   }
 }
