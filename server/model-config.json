@@ -58,5 +58,17 @@
   "realestate": {
     "dataSource": "mysql",
     "public": true
+  },
+  "liability": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "liabilitytype": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "liabilitystatus": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

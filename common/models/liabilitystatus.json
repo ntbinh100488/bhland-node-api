@@ -1,6 +1,6 @@
 {
-  "name": "staff",
-  "plural": "staffs",
+  "name": "liabilitystatus",
+  "plural": "liabilitystatuses",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -14,15 +14,10 @@
   },
   "validations": [],
   "relations": {
-    "notes": {
-      "type": "hasMany",
-      "model": "note",
-      "foreignKey": "staffId"
-    },
     "liabilities": {
       "type": "hasMany",
       "model": "liability",
-      "foreignKey": "responsibleStaffId"
+      "foreignKey": "liabilityStatusId"
     }
   },
   "acls": [],

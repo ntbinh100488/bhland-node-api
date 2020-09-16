@@ -1,0 +1,55 @@
+{
+  "name": "liability",
+  "plural": "liabilities",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string"
+    },
+    "value": {
+      "type": "number",
+      "required": true
+    },
+    "detail": {
+      "type": "string",
+      "required": true
+    },
+    "createdDate": {
+      "type": "date"
+    },
+    "verifiedDate": {
+      "type": "date"
+    },
+    "executedDate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "liabilitystatus": {
+      "type": "belongsTo",
+      "model": "liabilitystatus",
+      "foreignKey": "liabilityStatusId"
+    },
+    "liabilitytype": {
+      "type": "belongsTo",
+      "model": "liabilitytype",
+      "foreignKey": "liabilityTypeId"
+    },
+    "responsibleStaff": {
+      "type": "belongsTo",
+      "model": "staff",
+      "foreignKey": "responsibleStaffId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

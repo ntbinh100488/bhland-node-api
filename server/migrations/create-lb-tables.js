@@ -1,6 +1,7 @@
 var server = require('../server');
     var ds = server.dataSources.mysql;
-    var lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'note', 'staff', 'city', 'district', 'ward', 'realestate'];
+    // var lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role', 'note', 'staff', 'city', 'district', 'ward', 'realestate'];
+    var lbTables = ['liabilitystatus', 'liabilitytype', 'liability'];
 
     ds.automigrate(lbTables, function(er) {
         if (er) throw er;
