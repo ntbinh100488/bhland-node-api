@@ -7,12 +7,14 @@
 
 const loopback = require('loopback');
 const boot = require('loopback-boot');
+const cron = require('../cron/cron-init.js');
 
 const app = module.exports = loopback();
 
 app.start = function() {
   // start the web server
   return app.listen(function() {
+    // cron.startJobs();
     app.emit('started');
     const baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
