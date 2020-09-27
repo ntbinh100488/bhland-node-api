@@ -70,5 +70,17 @@
   "liabilitystatus": {
     "dataSource": "mysql",
     "public": true
+  },
+  "customertype": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "customerbudget": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "customer": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
