@@ -82,5 +82,9 @@
   "customer": {
     "dataSource": "mysql",
     "public": true
+  },
+  "customergroup": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
