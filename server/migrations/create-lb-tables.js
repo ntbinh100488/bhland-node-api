@@ -4,7 +4,8 @@ var server = require('../server');
     // var lbTables = ['liabilitystatus', 'liabilitytype', 'liability'];
     // var lbTables = ['customer', 'customerbudget', 'customertype'];
     // var lbTables = ['customer'];
-    var lbTables = ['customergroup'];
+    // var lbTables = ['customergroup', 'smstemplate'];
+    var lbTables = ['smstemplate'];
 
     ds.automigrate(lbTables, function(er) {
         if (er) throw er;
